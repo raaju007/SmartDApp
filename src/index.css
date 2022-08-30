@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "Circular Std";
+  src: local("Circular Regular"), local("CircularStd-Book"),
+    url("./assets/fonts/CircularStd-Book.woff2") format("woff2"),
+    url("./assets/fonts/CircularStd-Book.woff") format("woff"),
+    url("./assets/fonts/CircularStd-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: local("Circular Medium"), local("CircularStd-Medium"),
+    url("./assets/fonts/CircularStd-Medium.ttf") format("woff2"),
+    url("./assets/fonts/CircularStd-Medium.woff") format("woff"),
+    url("./assets/fonts/CircularStd-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", "Circular Std", "Roboto", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body.open {
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 35px;
+}
+
+/*Media*/
+
+/* @media screen and (max-width: 992px) {
+  ul.control-dots {
+    width: 100% !important;
+  }
+  .container {
+    padding: 0 35px;
+  }
+} */
+@media screen and (max-width: 600px) {
+  ul.control-dots {
+    width: 100% !important;
+  }
+  .container {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 135px;
+  }
+}
